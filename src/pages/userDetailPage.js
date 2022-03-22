@@ -1,4 +1,5 @@
 import { Header } from "../containers";
+import withPrivate from "../HOC/withPrivate";
 
 function UserDetailPage() {
   return (
@@ -10,4 +11,4 @@ function UserDetailPage() {
   );
 }
 
-export default UserDetailPage;
+export default withPrivate(UserDetailPage);
